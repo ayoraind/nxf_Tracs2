@@ -30,10 +30,13 @@ If you are using singularity, please use the nf-core download command to downloa
 If you are using conda, it is highly recommended to use the NXF_CONDA_CACHEDIR or conda.cacheDir settings to store the environments in a central location for future pipeline runs.
 Start running your own analysis!
 
+```
 nextflow run tracs --input samplesheet.csv --outdir <OUTDIR> --database <database_file>
+```
 
 Documentation
-The nf-core/tracs pipeline comes with documentation about the pipeline usage, parameters and output.
+The tracs pipeline comes with documentation about the pipeline usage, parameters and output.
 
 Credits
-tracs was originally written by The TAPIR team.
+tracs was originally written by The TAPIR team. 
+This is an ongoing project at the Microbial Genome Analysis Group, Institute for Infection Prevention and Hospital Epidemiology, Üniversitätsklinikum, Freiburg. The project is funded by BMBF, Germany, and is led by [Dr. Sandra Reuter](https://www.uniklinik-freiburg.de/institute-for-infection-prevention-and-control/microbial-genome-analysis.html).
