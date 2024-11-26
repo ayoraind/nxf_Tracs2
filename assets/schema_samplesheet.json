@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/nf-core/tracs/master/assets/schema_samplesheet.json",
+    "title": "nf-core/tracs pipeline - samplesheet schema",
+    "description": "Schema for the samplesheet used by the nf-core/tracs pipeline",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "sample": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Sample name must be provided and cannot contain spaces"
+            },
+            "fastq_1": {
+                "type": "string",
+                "pattern": "^\\S+\\.f(ast)?q\\.gz$",
+                "errorMessage": "FastQ file for reads 1 must be provided, cannot contain spaces and must have extension '.fq.gz' or '.fastq.gz'"
+            },
+            "fastq_2": {
+                "errorMessage": "FastQ file for reads 2 cannot contain spaces and must have extension '.fq.gz' or '.fastq.gz'",
+                "anyOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^\\S+\\.f(ast)?q\\.gz$"
+                    },
+                    {
+                        "type": "string",
+                        "maxLength": 0
+                    }
+                ]
+            },
+            "single_end": {
+                "type": "boolean",
+                "errorMessage": "Single-end value must be either 'true' or 'false'"
+            },
+            "platform": {
+                "type": "string",
+                "enum": ["illumina", "nanopore"],
+                "errorMessage": "Platform must be either 'illumina' or 'nanopore'"
+            }
+        },
+        "required": ["sample", "fastq_1", "single_end", "platform"]
+    }
+}
