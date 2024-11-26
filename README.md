@@ -2,7 +2,7 @@
 
 ## Introduction
 
-TRACS is a bioinformatics pipeline designed for separating strains from mock communities. It utilizes the align submodule of TRACS to analyze sequencing data and provide insights into community composition. Further details on TRACS can be found on the [original author's Github Page](https://github.com/gtonkinhill/tracs).
+TRACS is a bioinformatics pipeline designed for separating strains from mock communities. It utilizes the `align` submodule of TRACS to analyze sequencing data and provide insights into community composition. Further details on TRACS can be found on the [original author's Github Page](https://github.com/gtonkinhill/tracs).
 
 ## Pipeline Summary
 
@@ -34,9 +34,9 @@ Start running your own analysis!
 nextflow run tracs --input samplesheet.csv --outdir <OUTDIR> --database <database_file>
 ```
 
-Documentation
+## Documentation
 The tracs pipeline comes with documentation about the pipeline usage, parameters and output.
 
-Credits
+## Credits
 tracs was originally written by The TAPIR team. 
 This is an ongoing project at the Microbial Genome Analysis Group, Institute for Infection Prevention and Hospital Epidemiology, Üniversitätsklinikum, Freiburg. The project is funded by BMBF, Germany, and is led by [Dr. Sandra Reuter](https://www.uniklinik-freiburg.de/institute-for-infection-prevention-and-control/microbial-genome-analysis.html).
