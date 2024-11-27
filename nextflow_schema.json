@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/nf-core/tracs/master/assets/schema_input.json",
-    "title": "nf-core/tracs pipeline parameters",
+    "title": "tapir tracs pipeline parameters",
     "description": "Schema for the config parameters used in the nf-core/tracs pipeline",
     "type": "object",
     "definitions": {
