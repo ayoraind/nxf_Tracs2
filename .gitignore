@@ -1,5 +1,6 @@
 .nextflow*
-test_out*
+test*
 null
 work
 result*
+samplesheet*
